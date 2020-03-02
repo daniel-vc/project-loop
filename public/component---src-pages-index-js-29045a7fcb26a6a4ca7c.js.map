@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./src/pages/index.js"],"names":[],"mappings":"2FAAA,gCACe,4BAAM","file":"component---src-pages-index-js-29045a7fcb26a6a4ca7c.js","sourcesContent":["import React from 'react'\nexport default () => <h1>CI / CD Development</h1>"],"sourceRoot":""}
