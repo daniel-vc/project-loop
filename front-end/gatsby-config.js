@@ -1,8 +1,6 @@
-/**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.org/docs/gatsby-config/
- */
+require('dotenv').config({
+  path: `.env.${process.env.NODE_ENV}`
+})
 
 module.exports = {
   plugins: [
@@ -18,7 +16,7 @@ module.exports = {
         refetchInterval: 60,
         headers: {
           // Learn about environment variables: https://gatsby.dev/env-vars
-          Authorization: `Bearer ${process.env.GRAPHQL_TOKEN}`,
+          Authorization: `Bearer ${process.env.GATSBY_GRAPHQL_TOKEN}`,
         },
         // Additional options to pass to node-fetch
         fetchOptions: {},
